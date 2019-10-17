@@ -27,32 +27,34 @@
         <a-plane material= "src:#wall; repeat: 2 2" position="0 0 -5" rotation="180 -180 -180" width="15" height="15" color="#E8E4C9"></a-plane>
         <a-plane material= "src:#carpet; repeat: 2 2" position="0 -5 0" rotation="-90 0 0" width="15" height="15"></a-plane>
         
+        <a-entity light="type: ambient; color: #BBB"></a-entity>
+        <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
         
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.376 -3.132 1.447" rotation="0 112.751 0"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.320 -3.125 -1.563" rotation="0 -17.711 0"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.455 -2.631 0.104" rotation="4.985 75.742 40.690"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.890 -3.266 -0.716" rotation = "0 -160.168 0"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="2.753 -2.858 -1.484" rotation = "40.995 161.665 -2.733"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.796 -1.655 -1.196" rotation = "33.758 34.022 -170.132"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.310 -1.565 -1.339" rotation = "-6.151 -164.490 -0.201"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="0.107 -2.991 -3.707" rotation = "-0.190 -24.958 -24.958"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="2.484 0.008 -1.439" rotation = "25.524 -24.521 -20.357"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.210 -0.157 -2.857" rotation = "-9.867 -22.735 0"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-1.261 -0.502 -1.920" rotation = "29.076 -40.531 29.613"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.431 .954 0.486" rotation = "-29.758 161.942 41.150"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.233 0.324 -0.669" rotation = "22.745 -30.011 -13.852"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.172 1.407 -2.695" rotation = "10.002 -49.042 10.964"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="2.067 3.303 -0.343" rotation = "33.335 -80.224 -55.038"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.756 1.592 -2.263" rotation = "-54.299 109.846 -138.080"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="2.733 3.092 -2.375" rotation = "71.830 -141.261 134.586"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.883 3.331 -1.564" rotation = "26.398 -94.823 -4.094"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.178 4.016 -.4" rotation = "2.110 90.931 27.350"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.041 5.069 0" rotation = "-23.585 -46.347 -14.645"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="0.459 6.683 -1.081" rotation = "-17.778 0 0"></a-gltf-model>
-        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="0.776 4.739 -2.803" rotation = "-5.251 -29.288 168.262"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.376 -3.132 1.447" rotation="0 0 0" visible= "false" animation="property: visible; to: true; delay: 7000;"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.320 -3.125 -1.563" rotation="0 -17.711 0" visible= "false" animation="property: visible; to: true; delay: 8000"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.455 -2.631 0.104" rotation="4.985 75.742 40.690" visible= "false" animation="property: visible; to: true; delay: 8750"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.890 -3.266 -0.716" rotation = "0 -160.168 0" visible= "false" animation="property: visible; to: true; delay: 9000"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="2.753 -2.858 -1.484" rotation = "40.995 161.665 -2.733" visible= "false" animation="property: visible; to: true; delay: 9200"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.796 -1.655 -1.196" rotation = "33.758 34.022 -170.132" visible= "false" animation="property: visible; to: true; delay: 9500"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.310 -1.565 -1.339" rotation = "-6.151 -164.490 -0.201" visible= "false" animation="property: visible; to: true; delay: 10000"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="0.107 -2.991 -3.707" rotation = "-0.190 -24.958 -24.958" visible= "false" animation="property: visible; to: true; delay: 10050"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="2.484 0.008 -1.439" rotation = "25.524 -24.521 -20.357" visible= "false" animation="property: visible; to: true; delay: 10060"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.210 -0.157 -2.857" rotation = "-9.867 -22.735 0" visible= "false" animation="property: visible; to: true; delay: 10100"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-1.261 -0.502 -1.920" rotation = "29.076 -40.531 29.613" visible= "false" animation="property: visible; to: true; delay: 10800"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.431 .954 0.486" rotation = "-29.758 161.942 41.150" visible= "false" animation="property: visible; to: true; delay: 11500"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.233 0.324 -0.669" rotation = "22.745 -30.011 -13.852" visible= "false" animation="property: visible; to: true; delay: 11900"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.172 1.407 -2.695" rotation = "10.002 -49.042 10.964" visible= "false" animation="property: visible; to: true; delay: 12000"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="2.067 3.303 -0.343" rotation = "33.335 -80.224 -55.038" visible= "false" animation="property: visible; to: true; delay: 12600"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.756 1.592 -2.263" rotation = "-54.299 109.846 -138.080" visible= "false" animation="property: visible; to: true; delay: 13000"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="2.733 3.092 -2.375" rotation = "71.830 -141.261 134.586" visible= "false" animation="property: visible; to: true; delay: 13500"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.883 3.331 -1.564" rotation = "26.398 -94.823 -4.094" visible= "false" animation="property: visible; to: true; delay: 13590"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="-0.178 4.016 -.4" rotation = "2.110 90.931 27.350" visible= "false" animation="property: visible; to: true; delay: 14000"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="1.041 5.069 0" rotation = "-23.585 -46.347 -14.645" visible= "false" animation="property: visible; to: true; delay: 14400"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="0.459 6.683 -1.081" rotation = "-17.778 0 0" visible= "false" animation="property: visible; to: true; delay: 16000"></a-gltf-model>
+        <a-gltf-model src="#chair_obj" scale=".004, .004, .004" position="0.776 4.739 -2.803" rotation = "-5.251 -29.288 168.262" visible= "false" animation="property: visible; to: true; delay: 14900"></a-gltf-model>
+        
+        <a-light color="yellow" position="-1.227 7.582 -1.341" visible="false" animation="property: visible; to: ture; delay: 16700"></a-light>
 
-        
-        
         
         
         <a-gltf-model src="#AC_obj" scale=".02 .03 .02" rotation="0 -90 0" position="-5.83 5.702 -4.561"></a-gltf-model>
